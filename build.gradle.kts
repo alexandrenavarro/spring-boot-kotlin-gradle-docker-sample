@@ -8,7 +8,7 @@ plugins {
 	kotlin("jvm") version "1.4.21"
 	kotlin("plugin.spring") version "1.4.21"
 	id("com.google.cloud.tools.jib") version "2.7.0"
-	id("pl.allegro.tech.build.axion-release") version "1.11.0"
+	id("pl.allegro.tech.build.axion-release") version "1.12.0"
 }
 
 version = scmVersion.version
