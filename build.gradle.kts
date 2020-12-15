@@ -28,11 +28,6 @@ repositories {
 	mavenCentral()
 }
 
-scmVersion {
-	nextVersion(closureOf<NextVersionConfig> {
-		suffix = "SNAPSHOT"
-	})
-}
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
