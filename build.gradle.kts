@@ -7,7 +7,6 @@ plugins {
 	kotlin("plugin.spring") version "1.4.21"
 	id("com.google.cloud.tools.jib") version "2.7.0"
 	id("pl.allegro.tech.build.axion-release") version "1.11.0"
-	//id("io.alcide.gradle-semantic-build-versioning") version "4.2.1"
 }
 
 version = scmVersion.version
