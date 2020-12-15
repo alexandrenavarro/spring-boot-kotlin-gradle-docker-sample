@@ -12,7 +12,7 @@ plugins {
 version = scmVersion.version
 
 group = "com.github.alexandrenavarrro"
-version = "0.0.1-SNAPSHOT"
+version = "0.1.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
 configurations {
