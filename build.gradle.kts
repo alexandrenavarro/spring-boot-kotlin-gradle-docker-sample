@@ -1,4 +1,6 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import pl.allegro.tech.build.axion.release.domain.TagNameSerializationConfig
+import pl.allegro.tech.build.axion.release.domain.NextVersionConfig
 
 plugins {
 	id("org.springframework.boot") version "2.4.1"
@@ -26,6 +28,15 @@ repositories {
 	mavenCentral()
 }
 
+scmVersion {
+	tag(closureOf<TagNameSerializationConfig> {
+		prefix = "v"
+		versionSeparator = ""
+	})
+	nextVersion(closureOf<NextVersionConfig> {
+		suffix = ""
+	})
+}
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation("org.springframework.boot:spring-boot-starter-web")
