@@ -29,10 +29,6 @@ repositories {
 }
 
 scmVersion {
-	tag(closureOf<TagNameSerializationConfig> {
-		prefix = "v"
-		versionSeparator = ""
-	})
 	nextVersion(closureOf<NextVersionConfig> {
 		suffix = ""
 	})
